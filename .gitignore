@@ -1,0 +1,10 @@
+# Exclude downloaded radar data
+dataset_evaluation/data/
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+venv/
