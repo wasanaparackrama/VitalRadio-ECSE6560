@@ -1,0 +1,5 @@
+reference_target,hypothesized_candidate,candidate_angle_deg,preprocessing,ecg_reference_bpm,radar_heartbeat_band_peak_per_min,exploratory_absolute_difference_per_min,status
+Target1,Candidate2,38.0,Original,102.0,75.0,27.0,UNVALIDATED subject assignment and radar heartbeat peak
+Target1,Candidate2,38.0,Mean cancelled,102.0,102.0,0.0,UNVALIDATED subject assignment and radar heartbeat peak
+Target2,Candidate1,-22.0,Original,69.0,71.0,2.0,UNVALIDATED subject assignment and radar heartbeat peak
+Target2,Candidate1,-22.0,Mean cancelled,69.0,66.0,3.0,UNVALIDATED subject assignment and radar heartbeat peak
