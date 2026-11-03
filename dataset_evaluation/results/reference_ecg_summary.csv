@@ -1,0 +1,3 @@
+Target,ECG Samples,Assumed Duration (s),Detected ECG Peaks,Beat Count BPM,Median RR BPM
+1,7500,60.0,102,102.0,101.35135135135135
+2,7500,60.0,69,69.0,69.44444444444444
