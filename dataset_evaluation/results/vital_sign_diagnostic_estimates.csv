@@ -1,0 +1,9 @@
+candidate,estimated_angle_deg,estimated_range_m,preprocessing,frequency_band,spectral_peak_hz,spectral_peak_per_min,status
+1,-22.0,1.250,Original,Breathing,0.25000,15.00,UNVALIDATED spectral candidate (not ground-truth checked)
+1,-22.0,1.250,Original,Heartbeat,1.18333,71.00,UNVALIDATED spectral candidate (not ground-truth checked)
+1,-22.0,1.250,Mean cancelled,Breathing,0.28333,17.00,UNVALIDATED spectral candidate (not ground-truth checked)
+1,-22.0,1.250,Mean cancelled,Heartbeat,1.10000,66.00,UNVALIDATED spectral candidate (not ground-truth checked)
+2,38.0,1.211,Original,Breathing,0.16667,10.00,UNVALIDATED spectral candidate (not ground-truth checked)
+2,38.0,1.211,Original,Heartbeat,1.25000,75.00,UNVALIDATED spectral candidate (not ground-truth checked)
+2,38.0,1.211,Mean cancelled,Breathing,0.21667,13.00,UNVALIDATED spectral candidate (not ground-truth checked)
+2,38.0,1.211,Mean cancelled,Heartbeat,1.70000,102.00,UNVALIDATED spectral candidate (not ground-truth checked)
