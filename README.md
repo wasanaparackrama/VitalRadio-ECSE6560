@@ -60,54 +60,77 @@ Breathing Rate and Heart Rate
 
 The FMCW beat frequency is related to the target range by:
 
-[
-f_b = \frac{2SR}{c}
-]
+`f_beat = (2 * S * R) / c`
 
 Therefore,
 
-[
-R = \frac{cf_b}{2S}
-]
+`R = (c * f_beat) / (2 * S)`
 
 where:
 
-- (R): Target distance
-- (S): FMCW chirp slope
-- (c): Speed of light
-- (f_b): Beat frequency
+- `R` = Target distance (m)
+- `S` = FMCW chirp slope (Hz/s)
+- `c` = Speed of light (m/s)
+- `f_beat` = Beat frequency (Hz)
 
 ### Human Chest Motion
 
 Human chest displacement is modeled as:
 
-[
-x(t)=A_B\cos(2\pi f_Bt)+A_H\cos(2\pi f_Ht)
-]
+`x(t) = A_B * cos(2π * f_B * t) + A_H * cos(2π * f_H * t)`
 
-where the two components represent breathing-related and heartbeat-related movements.
+where:
+
+- `x(t)` = Total chest displacement (m)
+- `A_B` = Breathing displacement amplitude (m)
+- `A_H` = Heartbeat displacement amplitude (m)
+- `f_B` = Breathing frequency (Hz)
+- `f_H` = Heartbeat frequency (Hz)
+- `t` = Time (s)
+
+The two periodic components represent breathing-related and heartbeat-related movements.
 
 ### Radar Phase
 
-Small chest movements produce variations in the phase of the reflected radar signal:
+Small chest movements produce variations in the phase of the reflected radar signal.
 
-[
-\phi(t)=\frac{4\pi R(t)}{\lambda}
-]
+The instantaneous target range is:
 
-The phase variations are analyzed to estimate breathing and heartbeat frequencies.
+`R(t) = R0 + x(t)`
 
-The estimated rates are:
+The corresponding radar phase is:
 
-[
-BR=60f_B
-]
+`φ(t) = (4 * π * R(t)) / λ`
 
-[
-HR=60f_H
-]
+where:
 
-where (BR) is breathing rate in breaths per minute and (HR) is heart rate in beats per minute.
+- `R0` = Average target distance (m)
+- `R(t)` = Instantaneous target distance (m)
+- `λ` = Radar wavelength (m)
+- `φ(t)` = Radar phase (radians)
+
+The complex radar signal can be represented as:
+
+`z(t) = A * exp(j * φ(t))`
+
+Phase variations are extracted from the complex I/Q signal and analyzed to estimate breathing and heartbeat frequencies.
+
+The estimated rates are calculated as:
+
+**Breathing Rate:**
+
+`BR = 60 * f_B`
+
+**Heart Rate:**
+
+`HR = 60 * f_H`
+
+where:
+
+- `BR` = Breathing rate (breaths/min)
+- `HR` = Heart rate (beats/min)
+
+The factor of 60 converts frequency from cycles per second into cycles per minute.
 
 ## 4. Repository Structure
 
@@ -283,8 +306,4 @@ The metrics will be evaluated separately for breathing rate and heart rate.
 
 [https://data.mendeley.com/datasets/684v4r8wfr/1](https://data.mendeley.com/datasets/684v4r8wfr/1)
 
----
 
-**Project:** ECSE 6560 – Modern Communication Systems
-**Institution:** Rensselaer Polytechnic Institute
-**Academic Term:** Fall 2026
