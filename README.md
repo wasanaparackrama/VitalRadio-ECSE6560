@@ -307,3 +307,5 @@ The metrics will be evaluated separately for breathing rate and heart rate.
 [https://data.mendeley.com/datasets/684v4r8wfr/1](https://data.mendeley.com/datasets/684v4r8wfr/1)
 
 
+Project: ECSE 6560 – Modern Communication Systems
+Academic Term: Fall 2026
