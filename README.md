@@ -1,7 +1,6 @@
 # VitalRadio: Contactless Breathing and Heart Rate Estimation Using FMCW Radar
 
 **ECSE 6560 – Modern Communication Systems**
-Rensselaer Polytechnic Institute (RPI)
 Fall 2026
 
 ## 1. Project Overview
